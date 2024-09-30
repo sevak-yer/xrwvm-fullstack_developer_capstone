@@ -37,8 +37,6 @@ const Register = () => {
         }),
     });
 
-    console.log(res.body)
-
     const json = await res.json();
     if (json.status) {
         sessionStorage.setItem('username', json.userName);
