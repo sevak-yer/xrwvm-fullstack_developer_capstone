@@ -54,7 +54,7 @@ jobs:
 
       - name: Create JSHint configuration file
         run: |
-          echo '{ "esversion": 6 }' > .jshintrc  # This creates a .jshintrc file with ES6 support
+          echo '{ "esversion": 8 }' > .jshintrc  # Update to ES8 to support async/await
 
       - name: Run Linter
         run: |
