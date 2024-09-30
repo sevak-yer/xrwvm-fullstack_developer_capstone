@@ -52,6 +52,10 @@ jobs:
       - name: Install JSHint
         run: npm install jshint --global
 
+      - name: Create JSHint configuration file
+        run: |
+          echo '{ "esversion": 6 }' > .jshintrc  # This creates a .jshintrc file with ES6 support
+
       - name: Run Linter
         run: |
           # This command finds all JavaScript files recursively and runs JSHint on them
